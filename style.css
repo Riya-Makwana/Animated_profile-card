@@ -1,34 +1,33 @@
-/* Center the card */
 body {
   margin: 0;
   font-family: tahoma;
   height: 100vh;
-  background: white;
+  background: #f0f8ff; 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Styling for card */
 .card {
   padding: 30px 0 55px;
   margin-bottom: 30px;
-  background-color: powderblue;
+  background-color: #e6f7ff; 
   text-align: center;
   overflow: hidden;
   position: relative;
-  box-shadow: 20px 20px 42px #d0d0d0, -20px -20px 42px #ffffff;
+  box-shadow: 20px 20px 42px #c7d9e0, -20px -20px 42px #ffffff; 
   width: 20rem;
+  border-radius: 15px; 
 }
 
-/* Profile image section */
+/* Profile image section with soft effects */
 .card .picture {
   display: inline-block;
   height: 130px;
   width: 130px;
   z-index: 1;
   position: relative;
-  border-radius: 20%;
+  border-radius: 50%;
 }
 
 .card .picture::before {
@@ -36,12 +35,12 @@ body {
   width: 100%;
   height: 0;
   border-radius: 50%;
-  background-color: #1f1b1b;
+  background-color: #b0c4de; /* Soft light steel blue */
   position: absolute;
   bottom: 135%;
   right: 0;
   left: 0;
-  opacity: 0.9;
+  opacity: 0.8;
   transform: scale(3);
   transition: all 0.3s linear 0s;
 }
@@ -55,7 +54,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #1f1b1b;
+  background-color: #b0c4de; 
   position: absolute;
   top: 0;
   left: 0;
@@ -71,11 +70,10 @@ body {
 }
 
 .card:hover .picture img {
-  box-shadow: 0 0 0 14px #f7f5ec;
+  box-shadow: 0 0 0 14px #fffacd; 
   transform: scale(0.7);
 }
 
-/* Main content section */
 .card .main-content {
   margin-bottom: -19px;
 }
@@ -83,7 +81,7 @@ body {
 .card .main-content .title {
   display: block;
   font-size: 15px;
-  color: #1f1b1b;
+  color: #708090; 
   text-transform: capitalize;
   margin: 5px 37px 0;
 }
@@ -92,14 +90,14 @@ body {
   padding: 0;
   margin: 8px;
   text-transform: uppercase;
+  color: #4682b4; 
 }
 
-/* Social media section */
 .card .social {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: #1f1b1b;
+  background-color: #b0c4de; 
   position: absolute;
   bottom: -100px;
   left: 0;
@@ -118,18 +116,18 @@ body {
   display: block;
   padding: 10px;
   font-size: 17px;
-  color: #fff;
+  color: #ffffff; 
   transition: all 0.3s ease 0s;
   text-decoration: none;
 }
 
 .card .social li a:hover {
-  color: #3e3b44;
-  background-color: #f7f5ec;
+  color: #708090; 
+  background-color: #fffacd; 
   transition: 0.5s;
 }
 
-/* Skills section */
+
 .skills {
   text-align: left;
   padding: 15px;
@@ -142,17 +140,18 @@ body {
 }
 
 .skills ul li {
-  border: 1px solid #1f1b1b;
-  border-radius: 2px;
+  border: 1px solid #b0c4de; 
+  border-radius: 5px; 
   display: inline-block;
   font-size: 12px;
   margin: 0 7px 7px 0;
   padding: 7px;
+  color: #708090; 
 }
 
 .skills ul li:hover {
-  background-color: #1f1b1b;
-  color: #fff;
+  background-color: #b0c4de; 
+  color: #ffffff; 
   cursor: pointer;
   transition: 0.5s;
 }
