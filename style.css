@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: tahoma;
     height: 100vh;
-    background: blue;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,6 +176,7 @@ body {
   }
 
   
+
 
 
 
